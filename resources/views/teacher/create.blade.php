@@ -20,7 +20,6 @@
             </div>
 
 
-
             <div class="mb-4">
                 <label for="area_id" class="block text-gray-700 font-medium mb-2">Área</label>
                 <select name="area_id" id="area_id" class="w-full border border-gray-300 rounded-lg px-4 py-2">
