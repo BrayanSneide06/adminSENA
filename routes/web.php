@@ -1,15 +1,24 @@
 <?php
 
+<<<<<<< HEAD
 use App\Http\Controllers\ApprenticeController;
 use App\Http\Controllers\AreaController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\ComputerController;
+=======
+use App\Http\Controllers\AreaController;
+use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\Auth\RegisterController;
+>>>>>>> acea4d86cc3a8a036946910efe8c410dbeccc27e
 use App\Http\Controllers\CourseController;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\TeacherController;
 use App\Http\Controllers\TrainingCenterController;
+<<<<<<< HEAD
 use App\Models\Course;
+=======
+>>>>>>> acea4d86cc3a8a036946910efe8c410dbeccc27e
 use App\Models\TrainingCenter;
 use Illuminate\Support\Facades\Route;
 
@@ -50,6 +59,7 @@ Route::get('/dashboard', function () {
 })->middleware('auth')->name('dashboard');
 
 
+<<<<<<< HEAD
 // =======================
 // training_centers 
 // =======================
@@ -67,6 +77,8 @@ Route::put('/training_centers/{training_center}', [TrainingCenterController::cla
 Route::delete('/training_centers/{training_center}', [TrainingCenterController::class, 'destroy'])->name('training_centers.destroy');
 
 
+=======
+>>>>>>> acea4d86cc3a8a036946910efe8c410dbeccc27e
 // ====================
 // CRUD DE ÁREAS (AREA)
 // ====================
@@ -81,6 +93,7 @@ Route::get('/area/create', [AreaController::class, 'create'])->name('user.create
 Route::post('/area', [AreaController::class, 'store'])->name('user.store');
 
 // Editar área
+<<<<<<< HEAD
 Route::get('/user/{area}/edit', [AreaController::class, 'edit'])->name('user.edit');
 
 // Actualizar área
@@ -88,6 +101,15 @@ Route::put('/user/{area}', [AreaController::class, 'update'])->name('user.update
 
 // Eliminar área
 Route::delete('/user/{area}', [AreaController::class, 'destroy'])->name('user.destroy');
+=======
+Route::get('/user/{course}/edit', [AreaController::class, 'edit'])->name('user.edit');
+
+// Actualizar área
+Route::put('/user/{course}', [AreaController::class, 'update'])->name('user.update');
+
+// Eliminar área
+Route::delete('/user/{course}', [AreaController::class, 'destroy'])->name('user.destroy');
+>>>>>>> acea4d86cc3a8a036946910efe8c410dbeccc27e
 
 
 // =======================
@@ -106,13 +128,20 @@ Route::post('/teacher', [TeacherController::class, 'store'])->name('teacher.stor
 // Editar docente
 Route::get('/teacher/{teacher}/edit', [TeacherController::class, 'edit'])->name('teacher.edit');
 
+<<<<<<< HEAD
 // Actualiza docente
+=======
+
+//actuliza docente
+
+>>>>>>> acea4d86cc3a8a036946910efe8c410dbeccc27e
 Route::put('/teacher/{teacher}', [TeacherController::class, 'update'])->name('teacher.update');
 
 // Eliminar docente
 Route::delete('/teacher/{teacher}', [TeacherController::class, 'destroy'])->name('teacher.destroy');
 
 
+<<<<<<< HEAD
 // =======================
 // courses
 // =======================
@@ -166,3 +195,15 @@ Route::get('/apprentices/{apprentice}/edit', [ApprenticeController::class, 'edit
 Route::put('/apprentices/{apprentice}', [ApprenticeController::class, 'update'])->name('apprentices.update');
 
 Route::delete('/apprentices/{apprentice}', [ApprenticeController::class, 'destroy'])->name('apprentices.destroy');
+=======
+
+// =======================
+// training_centers 
+// =======================
+
+
+Route::get('/training_centers', [TrainingCenterController::class, 'index'])->name('training_centers.index');
+
+Route::delete('/training_centers/{training_center}', [TrainingCenterController::class, 'destroy'])->name('training_centers.destroy');
+
+>>>>>>> acea4d86cc3a8a036946910efe8c410dbeccc27e

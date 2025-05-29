@@ -37,10 +37,17 @@
                class="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-2 hidden z-50">
             <a href="{{route('user.index')}}" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Area</a>
             <a href="{{route('teacher.index')}}" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Teacher</a>
+<<<<<<< HEAD
             <a href="{{route('computers.index')}}" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">computers</a>
              <a href="{{route('course.index')}}" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Course</a>
               <a href="{{route('apprentices.index')}}" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">apprentices</a>
                <a href="{{route('training_centers.index') }}" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">training_centers</a>
+=======
+            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">computers</a>
+             <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Course</a>
+              <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">apprentices</a>
+               <a href="{{ route('training_centers.index') }}" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">training_centers</a>
+>>>>>>> acea4d86cc3a8a036946910efe8c410dbeccc27e
           </div>
         </div>
 

@@ -2,11 +2,15 @@
 
 namespace App\Http\Controllers;
 
+<<<<<<< HEAD
 use App\Models\Computer;
+=======
+>>>>>>> acea4d86cc3a8a036946910efe8c410dbeccc27e
 use Illuminate\Http\Request;
 
 class ComputerController extends Controller
 {
+<<<<<<< HEAD
     public function index()
     {
 
@@ -61,4 +65,7 @@ class ComputerController extends Controller
         $computer->delete();
         return redirect()->route('computers.index')->with('success', 'El computador sea eliminado correctamente.');
     }
+=======
+    //
+>>>>>>> acea4d86cc3a8a036946910efe8c410dbeccc27e
 }

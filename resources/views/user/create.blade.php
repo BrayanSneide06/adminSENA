@@ -9,19 +9,45 @@
 
         <!-- Número de curso -->
         <div class="mb-4">
+<<<<<<< HEAD
             <label for="id" class="block text-gray-700 font-medium mb-2">Número del Area</label>
             <input type="text" name="id" id="id" placeholder="Número"
+=======
+            <label for="course_number" class="block text-gray-700 font-medium mb-2">Número de Curso</label>
+            <input type="text" name="course_number" id="course_number" placeholder="Número"
+>>>>>>> acea4d86cc3a8a036946910efe8c410dbeccc27e
                 class="w-full border border-gray-300 rounded-lg px-4 py-2">
         </div>
 
         <!-- Día -->
         <div class="mb-4">
+<<<<<<< HEAD
             <label for="name" class="block text-gray-700 font-medium mb-2">Día</label>
             <input type="text" name="name" id="name" placeholder="name"
                 class="w-full border border-gray-300 rounded-lg px-4 py-2">
         </div>
 
 
+=======
+            <label for="day" class="block text-gray-700 font-medium mb-2">Día</label>
+            <input type="text" name="day" id="day" placeholder="Día"
+                class="w-full border border-gray-300 rounded-lg px-4 py-2">
+        </div>
+
+        <!-- Área ID -->
+        <div class="mb-4">
+            <label for="area_id" class="block text-gray-700 font-medium mb-2">Área</label>
+            <input type="number" name="area_id" id="area_id" placeholder="ID del área"
+                class="w-full border border-gray-300 rounded-lg px-4 py-2">
+        </div>
+
+        <!-- Centro de formación -->
+        <div class="mb-4">
+            <label for="training_center_id" class="block text-gray-700 font-medium mb-2">Centro de Formación</label>
+            <input type="number" name="training_center_id" id="training_center_id" placeholder="ID del centro"
+                class="w-full border border-gray-300 rounded-lg px-4 py-2">
+        </div>
+>>>>>>> acea4d86cc3a8a036946910efe8c410dbeccc27e
 
         <!-- Botones de acción -->
         <div class="flex justify-end mt-6 space-x-2">

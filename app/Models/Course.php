@@ -10,6 +10,7 @@ class Course extends Model
     use HasFactory;
 
 
+<<<<<<< HEAD
     protected $fillable = [
         'id',
         'course_number',
@@ -17,6 +18,9 @@ class Course extends Model
         'area_id',
         'training_center_id',
     ];
+=======
+    protected $fillable = ['course_number', 'day', 'area_id', 'training_center_id'];
+>>>>>>> acea4d86cc3a8a036946910efe8c410dbeccc27e
 
 
     public function area()
@@ -24,7 +28,11 @@ class Course extends Model
         return $this->belongsTo(Area::class);
     }
 
+<<<<<<< HEAD
     public function trainingCenter()
+=======
+    public function training_center()
+>>>>>>> acea4d86cc3a8a036946910efe8c410dbeccc27e
     {
         return $this->belongsTo(TrainingCenter::class);
     }

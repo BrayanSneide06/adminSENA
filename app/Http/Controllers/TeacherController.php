@@ -15,26 +15,48 @@ class TeacherController extends Controller
         $area = Area::all();
         return view('teacher.index', compact('teachers', 'area'));
     }
+<<<<<<< HEAD
     public function create()
     {
         $areas = Area::all();
         $trainingCenters = TrainingCenter::all();
         return view('teacher.create', compact('areas', 'trainingCenters'));
     }
+=======
+
+
+    public function create()
+    {
+       
+    $areas = Area::all();
+     $trainingCenters = TrainingCenter::all(); 
+    return view('teacher.create', compact('areas', 'trainingCenters'));
+    }
+
+
+>>>>>>> acea4d86cc3a8a036946910efe8c410dbeccc27e
     public function store(Request $request)
     {
         $request->validate([
             'name' => 'required|string|max:255',
             'email' => 'required|string|max:255',
             'area_id' => 'required|exists:areas,id',
+<<<<<<< HEAD
             'training_center_id' => 'required|exists:training_centers,id',
+=======
+            'training_center_id' => 'required|exists:training_centers,id', 
+>>>>>>> acea4d86cc3a8a036946910efe8c410dbeccc27e
         ]);
 
         \App\Models\Teacher::create([
             'name' => $request->name,
             'email' => $request->email,
             'area_id' => $request->area_id,
+<<<<<<< HEAD
             'training_center_id' => $request->training_center_id,
+=======
+             'training_center_id' => $request->training_center_id,
+>>>>>>> acea4d86cc3a8a036946910efe8c410dbeccc27e
         ]);
 
         return redirect()->route('teacher.index')->with('success', 'Teacher creado correctamente');

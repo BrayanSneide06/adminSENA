@@ -39,29 +39,51 @@
 
 <div class="container mx-auto px-4 py-8"> 
     <div class="flex justify-between items-center mb-6">
+<<<<<<< HEAD
         <h1 class="text-2xl font-bold">Lista de Area</h1>
         <a href="{{ route('user.create') }}" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg transition">
             + Crear Area
+=======
+        <h1 class="text-2xl font-bold">Lista de Cursos</h1>
+        <a href="{{ route('user.create') }}" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg transition">
+            + Crear Curso
+>>>>>>> acea4d86cc3a8a036946910efe8c410dbeccc27e
         </a>
     </div>
 
  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<<<<<<< HEAD
      @foreach ($areas as $area)
+=======
+     @foreach ($courses as $course)
+>>>>>>> acea4d86cc3a8a036946910efe8c410dbeccc27e
 
     <div class="bg-white rounded-2xl shadow-md p-6 border hover:shadow-lg transition">
 
         <h2 class="text-xl font-semibold text-gray-800 mb-2">Curso 
+<<<<<<< HEAD
         <p class="text-gray-600"><strong>ID:</strong> {{ $area['id'] }}</p>
         <p class="text-gray-600"><strong>Nombre:</strong> {{ $area['name'] }}</p>
 
       <div class="mt-4 flex flex-col space-y-2 w-fit">
     <form method="POST" action="{{ route('user.destroy', $area->id) }}" onsubmit="return confirm('¿seguro que quiere eliminar?')">
+=======
+        <p class="text-gray-600"><strong>ID:</strong> {{ $course['id'] }}</p>
+        <p class="text-gray-600"><strong>Día:</strong> {{ $course['day'] }}</p>
+
+      <div class="mt-4 flex flex-col space-y-2 w-fit">
+    <form method="POST" action="{{ route('user.destroy', $course) }}" onsubmit="return confirm('¿seguro que quiere eliminar?')">
+>>>>>>> acea4d86cc3a8a036946910efe8c410dbeccc27e
         @csrf
         @method('DELETE')
         <button type="submit"  class="bg-red-600 text-white px-2 py-1 rounded hover:bg-red-900">Eliminar</button>
     </form>
 
+<<<<<<< HEAD
   <a href="{{ route('user.edit', $area->id) }}" class="bg-yellow-500 text-white px-2 py-1 rounded hover:bg-yellow-700">
+=======
+  <a href="{{ route('user.edit', $course->id) }}" class="bg-yellow-500 text-white px-2 py-1 rounded hover:bg-yellow-700">
+>>>>>>> acea4d86cc3a8a036946910efe8c410dbeccc27e
         Editar
     </a>
 </div>

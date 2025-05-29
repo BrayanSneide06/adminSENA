@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 
 class TrainingCenterController extends Controller
 {
+<<<<<<< HEAD
     public function index()
     {
 
@@ -56,7 +57,22 @@ class TrainingCenterController extends Controller
 
     public function destroy(TrainingCenter $training_center)
     {
+=======
+    public function index(){
+
+    $training_centers = TrainingCenter::all();
+        return view('training_centers.index', compact('training_centers'));
+    }
+
+
+    public function destroy(TrainingCenter $training_center){
+>>>>>>> acea4d86cc3a8a036946910efe8c410dbeccc27e
         $training_center->delete();
         return redirect()->route('training_centers.index')->with('success', 'El curso se elimino exitosamente');
     }
 }
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> acea4d86cc3a8a036946910efe8c410dbeccc27e

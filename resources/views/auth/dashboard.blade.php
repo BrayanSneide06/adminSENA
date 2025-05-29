@@ -19,7 +19,11 @@
                 <p class="text-gray-600">Este es el contenido de la segunda tarjeta. También puedes incluir imágenes,
                     enlaces u otros elementos.</p>
                 <div class="mt-4">
+<<<<<<< HEAD
                     <a href="{{route('course.index')}}" class="text-indigo-600 hover:underline">Ver más</a>
+=======
+                    <a href="#" class="text-indigo-600 hover:underline">Ver más</a>
+>>>>>>> acea4d86cc3a8a036946910efe8c410dbeccc27e
                 </div>
             </div>
 
@@ -38,7 +42,11 @@
                 <p class="text-gray-600">Este es el contenido de la segunda tarjeta. También puedes incluir imágenes,
                     enlaces u otros elementos.</p>
                 <div class="mt-4">
+<<<<<<< HEAD
                     <a href="{{ route('computers.index') }}" class="text-indigo-600 hover:underline">Ver más</a>
+=======
+                    <a href="{{ route('teacher.index') }}" class="text-indigo-600 hover:underline">Ver más</a>
+>>>>>>> acea4d86cc3a8a036946910efe8c410dbeccc27e
                 </div>
             </div>
 
@@ -47,7 +55,11 @@
                 <p class="text-gray-600">Este es el contenido de la segunda tarjeta. También puedes incluir imágenes,
                     enlaces u otros elementos.</p>
                 <div class="mt-4">
+<<<<<<< HEAD
                     <a href="{{ route('apprentices.index') }}" class="text-indigo-600 hover:underline">Ver más</a>
+=======
+                    <a href="{{ route('teacher.index') }}" class="text-indigo-600 hover:underline">Ver más</a>
+>>>>>>> acea4d86cc3a8a036946910efe8c410dbeccc27e
                 </div>
             </div>
 

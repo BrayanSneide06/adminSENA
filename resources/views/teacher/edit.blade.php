@@ -1,4 +1,8 @@
+<<<<<<< HEAD
  @extends('layouts.app')
+=======
+@extends('layouts.app')
+>>>>>>> acea4d86cc3a8a036946910efe8c410dbeccc27e
 
 @section('content')
     <div class="min-h-screen bg-gray-100 flex items-center justify-center px-4 py-8">
@@ -21,7 +25,11 @@
                     <input type="email" name="email" id="email" value="{{ old('email', $teacher->email) }}"
                         class="w-full border border-blue-300 focus:border-blue-500 focus:ring focus:ring-blue-200 rounded-xl px-4 py-2 shadow-sm transition duration-200">
                 </div>
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> acea4d86cc3a8a036946910efe8c410dbeccc27e
                 <div class="flex justify-between">
                     <a href="{{ route('teacher.index') }}"
                         class="bg-red-500 hover:bg-red-600 text-white font-semibold px-5 py-2 rounded-xl transition">Regresar</a>

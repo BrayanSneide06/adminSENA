@@ -2,13 +2,17 @@
 
 namespace App\Http\Controllers;
 
+<<<<<<< HEAD
 use App\Models\Area;
 use App\Models\Course;
 use App\Models\TrainingCenter;
+=======
+>>>>>>> acea4d86cc3a8a036946910efe8c410dbeccc27e
 use Illuminate\Http\Request;
 
 class CourseController extends Controller
 {
+<<<<<<< HEAD
     // Mostrar todos los cursos
     public function index()
     {
@@ -84,3 +88,7 @@ class CourseController extends Controller
     }
 }
 
+=======
+    
+}
+>>>>>>> acea4d86cc3a8a036946910efe8c410dbeccc27e

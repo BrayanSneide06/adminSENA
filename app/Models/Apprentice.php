@@ -9,6 +9,7 @@ class Apprentice extends Model
 {
     use HasFactory;
 
+<<<<<<< HEAD
        protected $fillable = [
         'name',
         'email',
@@ -25,4 +26,9 @@ class Apprentice extends Model
     {
         return $this->belongsTo(Course::class);
     }
+=======
+    public function computer(){
+        return $this->belongsTo(Computer::class);
+    }
+>>>>>>> acea4d86cc3a8a036946910efe8c410dbeccc27e
 }

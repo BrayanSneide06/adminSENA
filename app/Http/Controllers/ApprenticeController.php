@@ -2,13 +2,17 @@
 
 namespace App\Http\Controllers;
 
+<<<<<<< HEAD
 use App\Models\Apprentice;
 use App\Models\Computer;
 use App\Models\Course;
+=======
+>>>>>>> acea4d86cc3a8a036946910efe8c410dbeccc27e
 use Illuminate\Http\Request;
 
 class ApprenticeController extends Controller
 {
+<<<<<<< HEAD
     public function index()
     {
         $aprendices = Apprentice::all();
@@ -85,4 +89,7 @@ class ApprenticeController extends Controller
         $apprentice->delete();
         return redirect()->route('apprentices.index')->with('success', 'Aprendiz eliminado correctamente.');
     }
+=======
+    //
+>>>>>>> acea4d86cc3a8a036946910efe8c410dbeccc27e
 }

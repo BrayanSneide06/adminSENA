@@ -6,6 +6,11 @@
 
         <form action="{{ route('teacher.store') }}" method="POST">
             @csrf
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> acea4d86cc3a8a036946910efe8c410dbeccc27e
             <div class="mb-4">
                 <label for="training_center_id" class="block text-gray-700 font-medium mb-2">Centro de Formación</label>
                 <select name="training_center_id" id="training_center_id"
@@ -22,7 +27,11 @@
                 <label for="area_id" class="block text-gray-700 font-medium mb-2">Área</label>
                 <select name="area_id" id="area_id" class="w-full border border-gray-300 rounded-lg px-4 py-2">
                     <option value="">Seleccione un área</option>
+<<<<<<< HEAD
                     @foreach($areas as $area)
+=======
+                    @foreach ($areas as $area)
+>>>>>>> acea4d86cc3a8a036946910efe8c410dbeccc27e
                         <option value="{{ $area->id }}">{{ $area->name }}</option>
                     @endforeach
                 </select>

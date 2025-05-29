@@ -9,8 +9,11 @@ class Area extends Model
 {
     use HasFactory;
 
+<<<<<<< HEAD
     protected $fillable = ['di', 'name'];
 
+=======
+>>>>>>> acea4d86cc3a8a036946910efe8c410dbeccc27e
       public function teachers(){
         return $this->hasMany(Teacher::class);
     }
